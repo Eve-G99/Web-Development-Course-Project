@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <title>Assign-3</title>
+    <meta name="description" content="A HTML page for Assignment 3.">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!-- External Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5655cf8f36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--First part: Navigation-->
+    <div class=container>
+        <nav>
+            <a href="http://www.google.com"><img src="Assets/P1-Logo.svg" alt="Company Logo" class="company-logo"></a>
+            <div class="nav-links">
+                <a href="http://www.google.com">Home</a>
+                <a href="http://www.google.com">About</a>
+                <div class="dropdown">
+                    <a>Services ▼</a>
+                    <div class="dropdown-content">
+                        <a href="http://www.google.com">Honeymoon Packages</a>
+                        <a href="http://www.google.com">Tours Packages</a>
+                        <a href="http://www.google.com">Musical Events</a>
+                        <a href="http://www.google.com">Build Package</a>
+                    </div>
+                </div>
+                <a href="http://www.google.com">Upcoming Packages</a>
+            </div>
+            <a href="http://www.google.com"></a><button>Get in Touch</button></a>
+        </nav>
+
+        <!-- Introduction with search functionality-->
+        <section class="introduction">
+            <!--background image-->
+            <div class="intro-content">
+                <!--intro text-->
+                <h2>No matter where you're going to, we'll take you there</h2>
+                <!--search form-->
+                <form action="search-results.html" method="GET" class="search-form">
+                    <!-- Place input -->
+                    <input type="text" name="place" placeholder="Where to?" required>
+                    <!-- Travel Type dropdown -->
+                    <select name="type" required>
+                        <option value="" disabled selected hidden>Travel Type</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="leisure">BackPacking</option>
+                        <option value="cultural">Cruise</option>
+                        <option value="romantic">Romantic</option>
+                    </select>
+                    <!-- Duration input -->
+                    <select name="duration" required>
+                        <option value="" disabled selected hidden>Duration</option>
+                        <option value="oneDay">One Day</option>
+                        <option value="twoDays">Two Days</option>
+                        <option value="Week">Weekend</option>
+                        <option value="TwoWeeks">Two Weeks</option>
+                    </select>
+                    <!-- Submit button -->
+                    <button type="submit">Submit</button>
+                </form>
+                <p class="event-booking">2,500 people booked Tomorrowland Event in last 24 hours</p>
+            </div>
+        </section>
+    </div>
+
+    <!--Banner for Link to partner companies-->
+    <section class="partner-banner">
+        <div class="partner-container">
+            <img src="Assets/P2-1.png" alt="trivago" class="partner-logo" />
+            <img src="Assets/P2-2.png" alt="Fly Emirates" class="partner-logo" />
+            <img src="Assets/P2-3.png" alt="Airbnb" class="partner-logo" />
+            <img src="Assets/P2-4.png" alt="Turkish Airlines" class="partner-logo" />
+            <img src="Assets/P2-5.png" alt="SWISS" class="partner-logo" />
+        </div>
+    </section>
+
+    <!--Second Part: Main Content-->
+    <section>
+        <!--group 1: Category-->
+        <section class="category-section">
+            <h4 class="main-title">CATEGORY</h4>
+            <h2 class="main-long-title">We Offer Best Services</h2>
+            <div class="services-container">
+                <figure class="service-item special-bg">
+                    <img src="Assets/P3-Group1-1.jpg" alt="Guided Tours">
+                    <figcaption>
+                        <h3>Guided Tours</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="service-item">
+                    <img src="Assets/P3-Group1-2.jpg" alt="Best Flights Options">
+                    <figcaption>
+                        <h3>Best Flights Options</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="service-item">
+                    <img src="Assets/P3-Group1-3.jpg" alt="Religious Tours">
+                    <figcaption>
+                        <h3>Religious Tours</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+                <figure class="service-item">
+                    <img src="Assets/P3-Group1-4.jpg" alt="Medical Insurance">
+                    <figcaption>
+                        <h3>Medical Insurance</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <!--group 2: HoneyMoon Specials-->
+        <section class="honeymoon-section">
+            <div class="honeymoon-image-stack">
+                <img src="Assets/P3-small-picture1.jpg" alt="Memory 1" class="honeymoon-small-image-2">
+                <img src="Assets/P3-small-picture2.jpg" alt="Memory 2" class="honeymoon-small-image-1">
+                <img src="Assets/P3-Group2.jpg" alt="Deluxe Portion" class="honeymoon-large-background">
+                <footer class="honeymoon-image-footer">
+                    <p class="honeymoon-vertical-text">Honeymoon Package</p>
+                </footer>
+            </div>
+            <div class="honeymoon-text-content">
+                <h4 class="main-title">HONEYMOON SPECIALS</h4>
+                <h2 class="main-long-title">Our Romantic Tropical Destinations</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, omnis! Laboriosam vero velit
+                    accusamus sint
+                    laudantium mollitia eos, a, voluptas illo blanditiis animi molestiae perferendis quod nesciunt
+                    ea.
+                    Laborum saepe tenetur quibusdam, quasi quaerat sapiente, enim distinctio doloribus eum natus
+                    perferendis illum
+                    modi. Amet minima quo distinctio quae ut quasi.</p>
+                <form action="get">
+                    <button type="button">View Packages</button>
+                </form>
+            </div>
+        </section>
+        <!--group 3: Fast & Easy-->
+        <section class="fast-easy-section">
+            <!-- header section -->
+            <div class="text-content">
+                <header>
+                    <h4 class="main-title">Fast & Easy</h4>
+                    <h2 class="main-long-title">Get Your Favourite Resort Booking</h2>
+                </header>
+                <!-- feature section -->
+                <ul class="fast-easy-features-list">
+                    <!-- Feature item: Choose Destination -->
+                    <li class="fast-easy-feature-item">
+                        <img src="Assets/P3-Group3-1.png" alt="Choose Destination Icon">
+                        <div class="fast-easy-feature-text">
+                            <h3>Choose Destination</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, ipsam temporibus sint
+                                aliquid numquam quaerat illum similique eum officiis deserunt.</p>
+                        </div>
+                    </li>
+                    <!-- Feature item: Check Availability -->
+                    <li class="fast-easy-feature-item">
+                        <img src="Assets/P3-Group3-2.png" alt="Check Availability Icon">
+                        <div class="fast-easy-feature-text">
+                            <h3>Check Availability</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, ipsam temporibus sint
+                                aliquid numquam quaerat illum similique eum officiis deserunt.</p>
+                        </div>
+                    </li>
+                    <!-- Feature item: Let's Go -->
+                    <li class="fast-easy-feature-item">
+                        <img src="Assets/P3-Group3-3.png" alt="Let's Go Icon">
+                        <div class="fast-easy-feature-text">
+                            <h3>Let's Go</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, ipsam temporibus sint
+                                aliquid numquam quaerat illum similique eum officiis deserunt.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- image section -->
+            <div>
+                <img src="Assets/P3-Group3-4.png" alt="Trip to Hawaii" class="fast-easy-main-image">
+            </div>
+        </section>
+        <!-- Dividing Banner -->
+        <section class="dividing-banner">
+            <img src="Assets/P3-Dividing.png" alt="Sky" class="dividing-banner-image">
+            <div class="dividing-banner-text">
+                <h2>Let's Make Your</h2>
+                <h2>Next Holiday Amazing</h2>
+            </div>
+        </section>
+        <!--group 4: Promotion-->
+        <section class="promotion-section">
+            <!-- gallery section -->
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="Assets/P3-Group4-1.jpg" alt="Location Image1" class="gallery-image">
+                    <span class="price-tag">$700</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/P3-Group4-2.jpg" alt="Location Image2" class="gallery-image">
+                    <span class="price-tag">$800</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/P3-Group4-3.jpg" alt="Location Image3" class="gallery-image">
+                    <span class="price-tag">$500</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="Assets/P3-Group4-4.jpg" alt="Location Image4" class="gallery-image">
+                    <span class="price-tag">$400</span>
+                </div>
+            </div>
+            <!-- header section -->
+            <header class="promotion-header">
+                <h4 class="main-title">PROMOTION</h4>
+                <h2 class="main-long-title">We Provide You Best Europe Sightseeing Tours</h2>
+                <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
+                    internos.Non quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime
+                    quasi aut ducimus illum aut optio quibusdam!</p>
+                <button type="button">View Packages</button>
+            </header>
+            <!-- Background Image and Vertical Text -->
+            <div class="promotion-background">
+                <img src="Assets/P3-Group4-5.jpg" alt="Background View" class="background-image">
+                <footer>
+                    <p class="promotion-vertical-text">Breath Taking Views</p>
+                </footer>
+            </div>
+        </section>
+        <!-- Promotion Banner -->
+        <section class="promotion-banner-section">
+            <!-- Nature Tour -->
+            <div class="promotion-banner nature">
+                <img src="Assets/P3-Group4-6.jpg" alt="Nature View" class="promotion-banner-image">
+                <div class="promotion-banner-content">
+                    <span class="promo-label">PROMOTION</span>
+                    <h2>Explore Nature</h2>
+                    <button type="button">View Packages</button>
+                </div>
+            </div>
+            <!-- City Tour -->
+            <div class="promotion-banner city">
+                <img src="Assets/P3-Group4-7.jpg" alt="City View" class="promotion-banner-image">
+                <div class="promotion-banner-content">
+                    <span class="promo-label">PROMOTION</span>
+                    <h2>Explore Cities</h2>
+                    <button type="button">View Packages</button>
+                </div>
+            </div>
+        </section>
+        <!--group 5: Trendy-->
+        <section class="trendy-section">
+            <div class="trendy-header" ->
+                <h4 class="main-title">TRENDY</h4>
+                <h2 class="main-long-title">Our Trending Tour</h2>
+                <h2 class="main-long-title">Packages</h2>
+                <div>
+                    <div class="trendy-packages">
+                        <!-- Switzerland -->
+                        <div class="package">
+                            <div class="package-image-container">
+                                <img src="Assets/round-icon-switzerland.png" alt="Switzerland Icon"
+                                    class="country-icon">
+                                <img src="Assets/P3-Group5-1.jpg" alt="Switzerland" class="package-image">
+                            </div>
+                            <div class="package-details">
+                                <p><i class="fa-regular fa-calendar"></i> 8 Days, <i class="fa-solid fa-user"></i> 25
+                                    People
+                                    Going</p>
+                                <h3>Switzerland <span class="stars">★★★★★</span></h3>
+                                <p><i class="fa-solid fa-location-dot"></i> Europe</p>
+                                <p class="trendy-price-tag">1,000 $ <del>1,200$</del></p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus magnam quae eaque
+                                    doloribus porro dolor, aliquid quos facere dicta, voluptatum quaerat, commodi quod
+                                    incidunt delectus. Facilis voluptas dolores omnis, quam similique dicta earum
+                                    possimus
+                                    sint illum quae quibusdam dignissimos blanditiis numquam, error deleniti.</p>
+                                <button class="explore-button">Explore Now</button>
+                            </div>
+                        </div>
+                        <!-- Amazon -->
+                        <div class="package">
+                            <div class="package-image-container">
+                                <img src="Assets/round-icon-amazon.png" alt="Amazon Icon" class="country-icon">
+                                <img src="Assets/P3-Group5-2.jpg" alt="Amazon" class="package-image">
+                            </div>
+                            <div class="package-details">
+                                <p><i class="fa-regular fa-calendar"></i> 8 Days, <i class="fa-solid fa-user"></i> 30
+                                    People
+                                    Going</p>
+                                <h3>Amazon <span class="stars">★★★★★</span></h3>
+                                <p><i class="fa-solid fa-location-dot"></i> Brazil</p>
+                                <p class="trendy-price-tag">1,099 $ <del>1,223$</del></p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus magnam quae eaque
+                                    doloribus porro dolor, aliquid quos facere dicta, voluptatum quaerat, commodi quod
+                                    incidunt delectus. Facilis voluptas dolores omnis, quam similique dicta earum
+                                    possimus
+                                    sint illum quae quibusdam dignissimos blanditiis numquam, error deleniti.</p>
+                                <button class="explore-button">Explore Now</button>
+                            </div>
+                        </div>
+                        <!-- Giza -->
+                        <div class="package">
+                            <div class="package-image-container">
+                                <img src="Assets/round-icon-giza.png" alt="Giza Icon" class="country-icon">
+                                <img src="Assets/P3-Group5-3.jpg" alt="Giza" class="package-image">
+                            </div>
+                            <div class="package-details">
+                                <p><i class="fa-regular fa-calendar"></i> 8 Days, <i class="fa-solid fa-user"></i> 155
+                                    People
+                                    Going</p>
+                                <h3>Giza <span class="stars">★★★★★</span></h3>
+                                <p><i class="fa-solid fa-location-dot"></i> Egypt</p>
+                                <p class="trendy-price-tag">1,200 $ <del>1,400$</del></p>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus magnam quae eaque
+                                    doloribus porro dolor, aliquid quos facere dicta, voluptatum quaerat, commodi quod
+                                    incidunt delectus. Facilis voluptas dolores omnis, quam similique dicta earum
+                                    possimus
+                                    sint illum quae quibusdam dignissimos blanditiis numquam, error deleniti.</p>
+                                <button class="explore-button">Explore Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+
+    <!-- Fourth part: Feedback for Promotion -->
+    <section class="feedback-section">
+        <div class="feedback-content">
+            <h4 class="main-title">PROMOTION</h4>
+            <h2 class="main-long-title">See What Our Clients Say</h2>
+            <h2 class="main-long-title">About Us</h2>
+            <div class="feedback-carousel">
+                <div class="carousel-button left-button">
+                    <span class="arrow left-arrow"></span>
+                </div>
+                <div class="testimonial">
+                    <img src="Assets/P4-1.png" alt="Client" class="client-avatar">
+                    <div class="testimonial-text">
+                        <blockquote>
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus modi sequi illo? Excepturi
+                            laudantium, pariatur odit enim tempore labore iste modi magnam, amet molestiae voluptates
+                            deserunt blanditiis illo temporibus earum repudiandae repellat dolores, doloremque libero
+                            sapiente. Enim, id! Ad id odit alias ipsum vitae quos numquam libero ab quibusdam nam modi
+                            ex labore, nesciunt eligendi consequuntur quasi error, iste provident tempore quam."
+                        </blockquote>
+                        <p><strong>Christine Beckam - Designer</strong></p>
+                    </div>
+                </div>
+                <div class="carousel-button right-button">
+                    <span class="arrow right-arrow"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fifth part: Footer Section -->
+    <footer class="footer-section">
+        <div class="footer-content">
+            <!-- Social Media Icons -->
+            <div class="footer-column social-media">
+                <img src="Assets/P1-Logo.svg" alt="Travel Logo" class="footer-logo">
+                <p class="footer-slogan">Travel helps companies manage payments easily.</p>
+                <div class="social-icons">
+                    <!-- Social icons links -->
+                    <a href="https://www.linkedin.com"><img src="Assets/P5-1.png" alt="LinkedIn"></a>
+                    <a href="https://www.twitter.com"><img src="Assets/P5-2.png" alt="Twitter"></a>
+                    <a href="https://www.facebook.com"><img src="Assets/P5-3.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com"><img src="Assets/P5-4.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <!-- Company Information Links -->
+            <div class="footer-column company-info">
+                <p class="footer-title">Company</p>
+                <!-- Company info links -->
+                <ul>
+                    <li><a href="http://www.google.com">About Us</a></li>
+                    <li><a href="http://www.google.com">Careers</a></li>
+                    <li><a href="http://www.google.com">Blog</a></li>
+                    <li><a href="http://www.google.com">Pricing</a></li>
+                </ul>
+            </div>
+            <!-- Destination Links -->
+            <div class="footer-column destinations">
+                <p class="footer-title">Destinations</p>
+                <!-- Destination links -->
+                <ul>
+                    <li><a href="http://www.google.com">Maldives</a></li>
+                    <li><a href="http://www.google.com">Los Angeles</a></li>
+                    <li><a href="http://www.google.com">Las Vegas</a></li>
+                    <li><a href="http://www.google.com">Toronto</a></li>
+                </ul>
+            </div>
+            <!-- Newsletter Subscription Form -->
+            <div class="footer-column newsletter">
+                <p class="footer-title">Join Our Newsletter</p>
+                <form action="" method="GET" class="subscription-form">
+                    <input type="email" id="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="subscription-note">* will send you weekly updates for your better tour packages.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; Xpro 2022. All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
